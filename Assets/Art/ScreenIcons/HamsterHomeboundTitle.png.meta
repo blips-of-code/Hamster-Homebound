@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: 2b2506fa8b2d68446820323147dfdbae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8652303489188567307
+    second: HamsterHomeboundTitle_0
+  - first:
+      213: 1753349285862305548
+    second: HamsterHomeboundTitle_1
+  - first:
+      213: 4028964163776345221
+    second: HamsterHomeboundTitle_2
+  - first:
+      213: -1198450489839414878
+    second: HamsterHomeboundTitle_3
+  - first:
+      213: -914383151892351794
+    second: HamsterHomeboundTitle_4
+  - first:
+      213: -6985139315051644045
+    second: HamsterHomeboundTitle_5
+  - first:
+      213: -644186839601743418
+    second: HamsterHomeboundTitle_6
+  - first:
+      213: -2349454532945514341
+    second: HamsterHomeboundTitle_7
+  - first:
+      213: -2266382147286853302
+    second: HamsterHomeboundTitle_8
+  - first:
+      213: 9026366056318008302
+    second: HamsterHomeboundTitle_9
+  - first:
+      213: -4834065975345153769
+    second: HamsterHomeboundTitle_10
+  - first:
+      213: 5694394229499689827
+    second: HamsterHomeboundTitle_11
+  - first:
+      213: -981293813351028382
+    second: HamsterHomeboundTitle_12
+  - first:
+      213: -264038165004178009
+    second: HamsterHomeboundTitle_13
+  - first:
+      213: 6467930155776380034
+    second: HamsterHomeboundTitle_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_0
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 82
+        width: 190
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f6ea0681d7dce780800000000000000
+      internalID: -8652303489188567307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 83
+        width: 63
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fe107c2e5255810800000000000000
+      internalID: 1753349285862305548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_2
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 82
+        width: 119
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 584faa28f81c9e730800000000000000
+      internalID: 4028964163776345221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_3
+      rect:
+        serializedVersion: 2
+        x: 521
+        y: 82
+        width: 57
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a19a3011af3e5fe0800000000000000
+      internalID: -1198450489839414878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_4
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 83
+        width: 31
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec4bad23e557f43f0800000000000000
+      internalID: -914383151892351794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_5
+      rect:
+        serializedVersion: 2
+        x: 647
+        y: 131
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37b3bb34dcccf0f90800000000000000
+      internalID: -6985139315051644045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 76
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c97e808b736f07f0800000000000000
+      internalID: -644186839601743418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_7
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 99
+        width: 22
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b90f9dbdc8f056fd0800000000000000
+      internalID: -2349454532945514341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_8
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 63
+        width: 33
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a491ea1e1713c80e0800000000000000
+      internalID: -2266382147286853302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_9
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 14
+        width: 252
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eeb7a7fba18144d70800000000000000
+      internalID: 9026366056318008302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_10
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 15
+        width: 64
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 719ffbe7b92f9ecb0800000000000000
+      internalID: -4834065975345153769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_11
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 14
+        width: 251
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36bfc5ca16d860f40800000000000000
+      internalID: 5694394229499689827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_12
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 70
+        width: 34
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2696ce2d97eb162f0800000000000000
+      internalID: -981293813351028382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_13
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 52
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ada7c710b2f55cf0800000000000000
+      internalID: -264038165004178009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HamsterHomeboundTitle_14
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 46
+        width: 39
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 28c86174534b2c950800000000000000
+      internalID: 6467930155776380034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      HamsterHomeboundTitle_0: -8652303489188567307
+      HamsterHomeboundTitle_1: 1753349285862305548
+      HamsterHomeboundTitle_10: -4834065975345153769
+      HamsterHomeboundTitle_11: 5694394229499689827
+      HamsterHomeboundTitle_12: -981293813351028382
+      HamsterHomeboundTitle_13: -264038165004178009
+      HamsterHomeboundTitle_14: 6467930155776380034
+      HamsterHomeboundTitle_2: 4028964163776345221
+      HamsterHomeboundTitle_3: -1198450489839414878
+      HamsterHomeboundTitle_4: -914383151892351794
+      HamsterHomeboundTitle_5: -6985139315051644045
+      HamsterHomeboundTitle_6: -644186839601743418
+      HamsterHomeboundTitle_7: -2349454532945514341
+      HamsterHomeboundTitle_8: -2266382147286853302
+      HamsterHomeboundTitle_9: 9026366056318008302
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
