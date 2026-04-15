@@ -14,9 +14,10 @@ GameObject:
   - component: {fileID: 5195494811833282940}
   - component: {fileID: 7530874800223209637}
   - component: {fileID: 2009759717295977729}
+  - component: {fileID: 2073331701131283076}
   m_Layer: 9
   m_Name: MiltonPawsUpPixel
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -201,6 +202,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &2073331701131283076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4064863644298728020}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a29dfc83fe4cb64fb13144de794e081, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthController
+  currentHealth: 0
+  maxHealth: 6
+  invincibleLength: 0
+  deathEffect: {fileID: 0}
 --- !u!1 &7059079338900612153
 GameObject:
   m_ObjectHideFlags: 0
