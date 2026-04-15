@@ -40,7 +40,7 @@ public class Pickup : MonoBehaviour
                 AudioManager.instance.PlaySFX(6);
             }
 
-            if(isHeal)
+            /*if(isHeal)
             {
                 if(PlayerHealthController.instance.currentHealth != PlayerHealthController.instance.maxHealth)
                 {
@@ -53,7 +53,7 @@ public class Pickup : MonoBehaviour
 
                     AudioManager.instance.PlaySFX(7);
                 }
-            }
+            }*/
         }
     }
 }
