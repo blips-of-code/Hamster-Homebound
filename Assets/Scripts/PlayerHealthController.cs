@@ -13,7 +13,7 @@ public class PlayerHealthController : MonoBehaviour
 
     private SpriteRenderer theSR;
 
-    public GameObject deathEffect;
+    //public GameObject deathEffect;
 
     private void Awake()
     {
@@ -53,27 +53,27 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
 
-                //gameObject.SetActive(false);
+                gameObject.SetActive(false);
 
-                Instantiate(deathEffect, transform.position, transform.rotation);
+                /*Instantiate(deathEffect, transform.position, transform.rotation);
 
-                LevelManager.instance.RespawnPlayer();
+                LevelManager.instance.RespawnPlayer();*/
             }
             else
             {
                 invincibleCounter = invincibleLength;
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, .5f);
 
-                PlayerController.instance.KnockBack();
+                SimplePlayerMovement.instance.KnockBack();
 
-                AudioManager.instance.PlaySFX(9);
+                //AudioManager.instance.PlaySFX(9);
             }
 
             UIController.instance.UpdateHealthDisplay();
         }
     }
 
-    public void HealPlayer()
+    /*public void HealPlayer()
     {
         //currentHealth = maxHealth;
 
@@ -100,5 +100,5 @@ public class PlayerHealthController : MonoBehaviour
         {
             transform.parent = null;
         }
-    }
+    }*/
 }
