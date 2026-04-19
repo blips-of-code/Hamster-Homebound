@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public bool isGem, isHeal;
+    public bool isGem;
 
     private bool isCollected;
 
-    public GameObject pickupEffect;
+    //public GameObject pickupEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -33,11 +33,11 @@ public class Pickup : MonoBehaviour
                 isCollected = true;
                 Destroy(gameObject);
 
-                Instantiate(pickupEffect, transform.position, transform.rotation);
+                /*Instantiate(pickupEffect, transform.position, transform.rotation);
 
                 UIController.instance.UpdateGemCount();
 
-                AudioManager.instance.PlaySFX(6);
+                AudioManager.instance.PlaySFX(6);*/
             }
 
             /*if(isHeal)

@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d3ea492a891bc749b561bde1b241788, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  waitToRespawn: 2
+  waitToRespawn: 1
   gemsCollected: 0
   levelToLoad: 
   timeInLevel: 0

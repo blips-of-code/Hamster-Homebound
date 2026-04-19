@@ -28,7 +28,7 @@ public class UIController : MonoBehaviour
     void Start()
     {
         UpdateGemCount();
-        FadeFromBlack();
+        //FadeFromBlack();
     }
 
     // Update is called once per frame
@@ -120,7 +120,7 @@ public class UIController : MonoBehaviour
         gemText.text = LevelManager.instance.gemsCollected.ToString();
     }
 
-    public void FadeToBlack()
+    /*public void FadeToBlack()
     {
         shouldFadeToBlack = true;
         shouldFadeFromBlack = false;
@@ -130,5 +130,5 @@ public class UIController : MonoBehaviour
     {
         shouldFadeFromBlack = true;
         shouldFadeToBlack = false;
-    }
+    }*/
 }

@@ -180,6 +180,8 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 256
+  knockBackLength: 0.25
+  knockBackForce: 5
 --- !u!95 &2009759717295977729
 Animator:
   serializedVersion: 7
@@ -216,8 +218,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerHealthController
   currentHealth: 0
   maxHealth: 6
-  invincibleLength: 0
-  deathEffect: {fileID: 0}
+  invincibleLength: 1
 --- !u!1 &7059079338900612153
 GameObject:
   m_ObjectHideFlags: 0

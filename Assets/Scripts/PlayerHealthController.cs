@@ -53,11 +53,11 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
 
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
 
-                /*Instantiate(deathEffect, transform.position, transform.rotation);
+                //Instantiate(deathEffect, transform.position, transform.rotation);
 
-                LevelManager.instance.RespawnPlayer();*/
+                LevelManager.instance.RespawnPlayer();
             }
             else
             {

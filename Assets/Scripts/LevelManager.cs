@@ -23,13 +23,13 @@ public class LevelManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        timeInLevel = 0f;
+        //timeInLevel = 0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-        timeInLevel += Time.deltaTime;
+        //timeInLevel += Time.deltaTime;
     }
 
     public void RespawnPlayer()
@@ -39,26 +39,28 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator RespawnCo()
     {
-        PlayerController.instance.gameObject.SetActive(false);
-        AudioManager.instance.PlaySFX(8);
+        SimplePlayerMovement.instance.gameObject.SetActive(false);
+        //AudioManager.instance.PlaySFX(8);
 
-        yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed));
+        yield return new WaitForSeconds(waitToRespawn);
+
+        /*yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed));
 
         UIController.instance.FadeToBlack();
 
         yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .2f);
 
-        UIController.instance.FadeFromBlack();
+        UIController.instance.FadeFromBlack();*/
 
-        PlayerController.instance.gameObject.SetActive(true);
+        SimplePlayerMovement.instance.gameObject.SetActive(true);
 
-        PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
+        SimplePlayerMovement.instance.transform.position = CheckpointController.instance.spawnPoint;
 
         PlayerHealthController.instance.currentHealth = PlayerHealthController.instance.maxHealth;
         UIController.instance.UpdateHealthDisplay();
     }
 
-    public void EndLevel()
+    /*public void EndLevel()
     {
         StartCoroutine(EndLevelCo());
     }
@@ -107,5 +109,5 @@ public class LevelManager : MonoBehaviour
         }
 
         SceneManager.LoadScene(levelToLoad);
-    }
+    }*/
 }
