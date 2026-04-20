@@ -73,7 +73,7 @@ public class PlayerHealthController : MonoBehaviour
         }
     }
 
-    /*public void HealPlayer()
+    public void HealPlayer()
     {
         //currentHealth = maxHealth;
 
@@ -86,7 +86,7 @@ public class PlayerHealthController : MonoBehaviour
         UIController.instance.UpdateHealthDisplay();
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    /*private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Platform")
         {

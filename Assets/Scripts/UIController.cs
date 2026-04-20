@@ -13,11 +13,11 @@ public class UIController : MonoBehaviour
 
     public Text gemText;
 
-    public Image fadeScreen;
-    public float fadeSpeed;
-    private bool shouldFadeToBlack, shouldFadeFromBlack;
+    //public Image fadeScreen;
+    //public float fadeSpeed;
+    //private bool shouldFadeToBlack, shouldFadeFromBlack;
 
-    public GameObject levelCompleteText;
+    //public GameObject levelCompleteText;
 
     private void Awake()
     {
@@ -34,7 +34,7 @@ public class UIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(shouldFadeToBlack)
+        /*if(shouldFadeToBlack)
         {
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
             if(fadeScreen.color.a == 1f)
@@ -50,7 +50,7 @@ public class UIController : MonoBehaviour
             {
                 shouldFadeFromBlack = false;
             }
-        }
+        }*/
     }
 
     public void UpdateHealthDisplay()
