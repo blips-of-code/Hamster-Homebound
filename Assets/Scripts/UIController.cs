@@ -117,7 +117,7 @@ public class UIController : MonoBehaviour
 
     public void UpdateGemCount()
     {
-        gemText.text = LevelManager.instance.gemsCollected.ToString();
+        //gemText.text = LevelManager.instance.gemsCollected.ToString();
     }
 
     /*public void FadeToBlack()
