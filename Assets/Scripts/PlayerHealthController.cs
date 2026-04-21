@@ -13,7 +13,7 @@ public class PlayerHealthController : MonoBehaviour
 
     private SpriteRenderer theSR;
 
-    //public GameObject deathEffect;
+    public GameObject deathEffect;
 
     private void Awake()
     {
@@ -55,7 +55,7 @@ public class PlayerHealthController : MonoBehaviour
 
                 //gameObject.SetActive(false);
 
-                //Instantiate(deathEffect, transform.position, transform.rotation);
+                Instantiate(deathEffect, transform.position, transform.rotation);
 
                 LevelManager.instance.RespawnPlayer();
             }

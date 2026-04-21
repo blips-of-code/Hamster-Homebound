@@ -92,9 +92,9 @@ public class SimplePlayerMovement : MonoBehaviour
     public void KnockBack()
     {
         knockBackCounter = knockBackLength;
-        /*theRB.linearVelocity = new Vector2(0f, knockBackForce);
+        theRB.linearVelocity = new Vector2(0f, knockBackForce);
 
-        anim.SetTrigger("hurt");*/
+        anim.SetTrigger("hurt");
     }
 
 }
