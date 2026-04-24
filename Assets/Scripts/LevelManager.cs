@@ -20,13 +20,11 @@ public class LevelManager : MonoBehaviour
         instance = this;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         timeInLevel = 0f;
     }
 
-    // Update is called once per frame
     void Update()
     {
         timeInLevel += Time.deltaTime;
@@ -39,23 +37,28 @@ public class LevelManager : MonoBehaviour
 
     private IEnumerator RespawnCo()
     {
-        PlayerController.instance.gameObject.SetActive(false);
-        AudioManager.instance.PlaySFX(8);
+        Debug.Log("Respawn started");
 
-        yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed));
+        SimplePlayerMovement.instance.gameObject.SetActive(false);
+        Debug.Log("Player disabled");
 
-        UIController.instance.FadeToBlack();
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlaySFX(8);
+        }
 
-        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .2f);
+        yield return new WaitForSeconds(waitToRespawn);
+        Debug.Log("Wait finished");
 
-        UIController.instance.FadeFromBlack();
-
-        PlayerController.instance.gameObject.SetActive(true);
-
-        PlayerController.instance.transform.position = CheckpointController.instance.spawnPoint;
+        SimplePlayerMovement.instance.gameObject.SetActive(true);
+        SimplePlayerMovement.instance.transform.position = CheckpointController.instance.spawnPoint;
 
         PlayerHealthController.instance.currentHealth = PlayerHealthController.instance.maxHealth;
-        UIController.instance.UpdateHealthDisplay();
+
+        if (UIController.instance != null)
+        {
+            UIController.instance.UpdateHealthDisplay();
+        }
     }
 
     public void EndLevel()
@@ -65,26 +68,31 @@ public class LevelManager : MonoBehaviour
 
     public IEnumerator EndLevelCo()
     {
-        AudioManager.instance.PlayLevelVictory();
+        Debug.Log("EndLevelCo started");
 
-        PlayerController.instance.stopInput = true;
+        if (CameraController.instance != null)
+        {
+            CameraController.instance.stopFollow = true;
+        }
 
-        CameraController.instance.stopFollow = true;
+        if (SimplePlayerMovement.instance != null)
+        {
+            SimplePlayerMovement.instance.stopInput = true;
+        }
 
-        UIController.instance.levelCompleteText.SetActive(true);
+        if (UIController.instance != null && UIController.instance.levelCompleteText != null)
+        {
+            UIController.instance.levelCompleteText.SetActive(true);
+        }
 
         yield return new WaitForSeconds(1.5f);
-
-        UIController.instance.FadeToBlack();
-
-        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + 3f);
 
         PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_unlocked", 1);
         PlayerPrefs.SetString("CurrentLevel", SceneManager.GetActiveScene().name);
 
         if (PlayerPrefs.HasKey(SceneManager.GetActiveScene().name + "_gems"))
         {
-            if(gemsCollected > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name + "_gems"))
+            if (gemsCollected > PlayerPrefs.GetInt(SceneManager.GetActiveScene().name + "_gems"))
             {
                 PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_gems", gemsCollected);
             }
@@ -96,7 +104,7 @@ public class LevelManager : MonoBehaviour
 
         if (PlayerPrefs.HasKey(SceneManager.GetActiveScene().name + "_time"))
         {
-            if(timeInLevel < PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name + "_time"))
+            if (timeInLevel < PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name + "_time"))
             {
                 PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "_time", timeInLevel);
             }

@@ -13,6 +13,7 @@ public class SimplePlayerMovement : MonoBehaviour
     public LayerMask whatIsGround;
 
     private bool canDoubleJump;
+    public bool doubleJumpKillReady;
 
     private Animator anim;
     private SpriteRenderer theSR;
@@ -20,44 +21,58 @@ public class SimplePlayerMovement : MonoBehaviour
     public float knockBackLength, knockBackForce;
     private float knockBackCounter;
 
+    public bool stopInput;
+
     private void Awake()
     {
         instance = this;
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         anim = GetComponent<Animator>();
         theSR = GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
     void Update()
     {
+        isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
+
+        if (isGrounded)
+        {
+            canDoubleJump = true;
+            doubleJumpKillReady = false;
+        }
+
+        if (stopInput)
+        {
+            theRB.linearVelocity = new Vector2(0f, theRB.linearVelocity.y);
+            anim.SetFloat("moveSpeed", Mathf.Abs(theRB.linearVelocity.x));
+            anim.SetBool("isGrounded", isGrounded);
+            return;
+        }
+
         if (knockBackCounter <= 0)
         {
             theRB.linearVelocity = new Vector2(moveSpeed * Input.GetAxis("Horizontal"), theRB.linearVelocity.y);
-
-            isGrounded = Physics2D.OverlapCircle(groundCheckPoint.position, .2f, whatIsGround);
-
-            if (isGrounded)
-            {
-                canDoubleJump = true;
-            }
 
             if (Input.GetButtonDown("Jump"))
             {
                 if (isGrounded)
                 {
                     theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
+                    AudioManager.instance.PlaySFX(10);
                 }
-                else
+                else if (canDoubleJump)
                 {
-                    if (canDoubleJump)
+                    theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
+                    canDoubleJump = false;
+                    doubleJumpKillReady = true;
+                    AudioManager.instance.PlaySFX(10);
+
+                    if (Level1TutorialManager.instance != null)
                     {
-                        theRB.linearVelocity = new Vector2(theRB.linearVelocity.x, jumpForce);
-                        canDoubleJump = false;
+                        Level1TutorialManager.instance.RegisterDoubleJump();
                     }
                 }
             }
@@ -70,11 +85,11 @@ public class SimplePlayerMovement : MonoBehaviour
             {
                 theSR.flipX = false;
             }
-
         }
         else
         {
             knockBackCounter -= Time.deltaTime;
+
             if (!theSR.flipX)
             {
                 theRB.linearVelocity = new Vector2(-knockBackForce, theRB.linearVelocity.y);
@@ -89,6 +104,11 @@ public class SimplePlayerMovement : MonoBehaviour
         anim.SetBool("isGrounded", isGrounded);
     }
 
+    public bool IsInDoubleJumpKillState()
+    {
+        return doubleJumpKillReady;
+    }
+
     public void KnockBack()
     {
         knockBackCounter = knockBackLength;
@@ -96,5 +116,4 @@ public class SimplePlayerMovement : MonoBehaviour
 
         anim.SetTrigger("hurt");*/
     }
-
 }

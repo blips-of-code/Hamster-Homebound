@@ -28,22 +28,22 @@ public class UIController : MonoBehaviour
     void Start()
     {
         UpdateGemCount();
-        FadeFromBlack();
+        //FadeFromBlack();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(shouldFadeToBlack)
+        if (shouldFadeToBlack)
         {
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 1f, fadeSpeed * Time.deltaTime));
-            if(fadeScreen.color.a == 1f)
+            if (fadeScreen.color.a == 1f)
             {
                 shouldFadeToBlack = false;
             }
         }
 
-        if(shouldFadeFromBlack)
+        if (shouldFadeFromBlack)
         {
             fadeScreen.color = new Color(fadeScreen.color.r, fadeScreen.color.g, fadeScreen.color.b, Mathf.MoveTowards(fadeScreen.color.a, 0f, fadeSpeed * Time.deltaTime));
             if (fadeScreen.color.a == 0f)
@@ -55,7 +55,7 @@ public class UIController : MonoBehaviour
 
     public void UpdateHealthDisplay()
     {
-        switch(PlayerHealthController.instance.currentHealth)
+        switch (PlayerHealthController.instance.currentHealth)
         {
             case 6:
                 heart1.sprite = heartFull;
@@ -120,7 +120,7 @@ public class UIController : MonoBehaviour
         gemText.text = LevelManager.instance.gemsCollected.ToString();
     }
 
-    public void FadeToBlack()
+    /*public void FadeToBlack()
     {
         shouldFadeToBlack = true;
         shouldFadeFromBlack = false;
@@ -130,5 +130,5 @@ public class UIController : MonoBehaviour
     {
         shouldFadeFromBlack = true;
         shouldFadeToBlack = false;
-    }
+    }*/
 }
