@@ -138,6 +138,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyFrog
   deathEffect: {fileID: 5036357262477003242, guid: 850221795be00524faecc9b03150256b, type: 3}
   bounceForce: 10
+  dropsKeyOnDeath: 0
+  keyPickupPrefab: {fileID: 0}
+  keySpawnPoint: {fileID: 0}
+  keyPickupID: L2Key
 --- !u!1001 &199243566
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -452,6 +456,10 @@ PrefabInstance:
     - target: {fileID: 1034216707324691417, guid: 271594d07ae48214a870b75305a96f7c, type: 3}
       propertyPath: m_Name
       value: UI Canvas (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1259909929676178612, guid: 271594d07ae48214a870b75305a96f7c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 456
       objectReference: {fileID: 0}
     - target: {fileID: 6705762217060172765, guid: 271594d07ae48214a870b75305a96f7c, type: 3}
       propertyPath: m_Pivot.x
