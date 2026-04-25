@@ -1,9 +1,16 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EnemyFrog : MonoBehaviour
 {
     public GameObject deathEffect;
     public float bounceForce = 10f;
+
+    [Header("Optional Key Drop")]
+    public bool dropsKeyOnDeath;
+    public GameObject keyPickupPrefab;
+    public Transform keySpawnPoint;
+    public string keyPickupID = "L2Key";
 
     private bool isDead;
     private Collider2D[] frogColliders;
@@ -61,6 +68,8 @@ public class EnemyFrog : MonoBehaviour
             SimplePlayerMovement.instance.doubleJumpKillReady = false;
             playerRB.linearVelocity = new Vector2(playerRB.linearVelocity.x, bounceForce);
 
+            TryDropKey();
+
             if (deathEffect != null)
             {
                 Instantiate(deathEffect, transform.position, transform.rotation);
@@ -74,5 +83,51 @@ public class EnemyFrog : MonoBehaviour
         {
             PlayerHealthController.instance.DealDamage();
         }
+    }
+
+    private void TryDropKey()
+    {
+        if (!dropsKeyOnDeath)
+        {
+            return;
+        }
+
+        if (keyPickupPrefab == null)
+        {
+            return;
+        }
+
+        if (string.IsNullOrEmpty(keyPickupID))
+        {
+            return;
+        }
+
+        if (PlayerPrefs.GetInt(GetKeySaveKey(), 0) == 1)
+        {
+            return;
+        }
+
+        Vector3 spawnPosition = transform.position;
+
+        if (keySpawnPoint != null)
+        {
+            spawnPosition = keySpawnPoint.position;
+        }
+
+        GameObject spawnedKey = Instantiate(keyPickupPrefab, spawnPosition, Quaternion.identity);
+
+        Pickup pickupScript = spawnedKey.GetComponent<Pickup>();
+        if (pickupScript != null)
+        {
+            pickupScript.isGem = false;
+            pickupScript.isHeal = false;
+            pickupScript.isKey = true;
+            pickupScript.pickupID = keyPickupID;
+        }
+    }
+
+    private string GetKeySaveKey()
+    {
+        return SceneManager.GetActiveScene().name + "_" + keyPickupID + "_collected";
     }
 }

@@ -10,6 +10,9 @@ public class LevelManager : MonoBehaviour
     public float waitToRespawn;
 
     public int gemsCollected;
+    public int totalGemsCollected;
+    public int keysCollected;
+    public int keysNeededToProgress;
 
     public string levelToLoad;
 
@@ -18,16 +21,36 @@ public class LevelManager : MonoBehaviour
     private void Awake()
     {
         instance = this;
+
+        gemsCollected = 0;
+        totalGemsCollected = PlayerPrefs.GetInt("TotalGemsCollected", 0);
+        keysCollected = PlayerPrefs.GetInt("TotalKeysCollected", 0);
     }
 
     void Start()
     {
         timeInLevel = 0f;
+
+        if (UIController.instance != null)
+        {
+            UIController.instance.UpdateGemCount();
+            UIController.instance.UpdateKeyCount();
+        }
     }
 
     void Update()
     {
         timeInLevel += Time.deltaTime;
+    }
+
+    public bool HasEnoughKeysToExit()
+    {
+        return keysCollected >= keysNeededToProgress;
+    }
+
+    public int KeysStillNeeded()
+    {
+        return Mathf.Max(0, keysNeededToProgress - keysCollected);
     }
 
     public void RespawnPlayer()
@@ -113,6 +136,10 @@ public class LevelManager : MonoBehaviour
         {
             PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name + "_time", timeInLevel);
         }
+
+        PlayerPrefs.SetInt("TotalGemsCollected", totalGemsCollected);
+        PlayerPrefs.SetInt("TotalKeysCollected", keysCollected);
+        PlayerPrefs.Save();
 
         SceneManager.LoadScene(levelToLoad);
     }

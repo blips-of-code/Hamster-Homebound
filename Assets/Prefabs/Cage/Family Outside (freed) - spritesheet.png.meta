@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 5d90788d6adf82d47b40abb7d184b5f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4686963136652919220
+    second: Family Outside (freed) - spritesheet_0
+  - first:
+      213: 4909765478215767174
+    second: Family Outside (freed) - spritesheet_1
+  - first:
+      213: -2198569816918828636
+    second: Family Outside (freed) - spritesheet_2
+  - first:
+      213: 6128247512374448477
+    second: Family Outside (freed) - spritesheet_3
+  - first:
+      213: -6540405335766261380
+    second: Family Outside (freed) - spritesheet_4
+  - first:
+      213: -7919970243862015094
+    second: Family Outside (freed) - spritesheet_5
+  - first:
+      213: -8744871766580674152
+    second: Family Outside (freed) - spritesheet_6
+  - first:
+      213: -4602156932359791665
+    second: Family Outside (freed) - spritesheet_7
+  - first:
+      213: -7106135151264530257
+    second: Family Outside (freed) - spritesheet_8
+  - first:
+      213: -757485628603716941
+    second: Family Outside (freed) - spritesheet_9
+  - first:
+      213: -8899840888985443643
+    second: Family Outside (freed) - spritesheet_10
+  - first:
+      213: 638264183064852308
+    second: Family Outside (freed) - spritesheet_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b14c83e3207b0140800000000000000
+      internalID: 4686963136652919220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 118
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 684d68b70bdf22440800000000000000
+      internalID: 4909765478215767174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 0
+        width: 115
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a958a8666c1d71e0800000000000000
+      internalID: -2198569816918828636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 463
+        y: 0
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5110c6c4a8eb0550800000000000000
+      internalID: 6128247512374448477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 629
+        y: 0
+        width: 117
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c71259aefffcb35a0800000000000000
+      internalID: -6540405335766261380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 0
+        width: 117
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a83d0f6660d961290800000000000000
+      internalID: -7919970243862015094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 922
+        y: 0
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 891cd9ae579f3a680800000000000000
+      internalID: -8744871766580674152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 1053
+        y: 0
+        width: 115
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcbd71e37aad120c0800000000000000
+      internalID: -4602156932359791665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 1224
+        y: 0
+        width: 118
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa006f6dabfe16d90800000000000000
+      internalID: -7106135151264530257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 0
+        width: 117
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3baac9885dedc75f0800000000000000
+      internalID: -757485628603716941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 1525
+        y: 0
+        width: 117
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2a6866dd96d7480800000000000000
+      internalID: -8899840888985443643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Outside (freed) - spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 1659
+        y: 0
+        width: 117
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4577f6094e19bd800800000000000000
+      internalID: 638264183064852308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Family Outside (freed) - spritesheet_0: 4686963136652919220
+      Family Outside (freed) - spritesheet_1: 4909765478215767174
+      Family Outside (freed) - spritesheet_10: -8899840888985443643
+      Family Outside (freed) - spritesheet_11: 638264183064852308
+      Family Outside (freed) - spritesheet_2: -2198569816918828636
+      Family Outside (freed) - spritesheet_3: 6128247512374448477
+      Family Outside (freed) - spritesheet_4: -6540405335766261380
+      Family Outside (freed) - spritesheet_5: -7919970243862015094
+      Family Outside (freed) - spritesheet_6: -8744871766580674152
+      Family Outside (freed) - spritesheet_7: -4602156932359791665
+      Family Outside (freed) - spritesheet_8: -7106135151264530257
+      Family Outside (freed) - spritesheet_9: -757485628603716941
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -69,7 +69,7 @@ public class Level1TutorialManager : MonoBehaviour
         introTimer = introDuration;
         waitingForTransition = false;
 
-        SetText("Hi, I'm Milton. My brothers, Lett and Burg, were captured by hawks and locked in a guarded cage. Help me collect the gold keys so I can save them!");
+        SetText("Hi, I'm Milton. My brothers, Let and Burg, were kidnapped! Help me collect the 3 keys so I can save them!");
     }
 
     private void Update()
@@ -199,7 +199,7 @@ public class Level1TutorialManager : MonoBehaviour
         if (currentStep == TutorialStep.Checkpoint && !waitingForTransition)
         {
             currentStep = TutorialStep.Star;
-            SetText("It’s a good idea to collect as many stars as I can.");
+            SetText("It’s very important that I collect 1 key per level and as many stars as I can.");
             return true;
         }
 
