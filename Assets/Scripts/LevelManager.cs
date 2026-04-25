@@ -70,8 +70,12 @@ public class LevelManager : MonoBehaviour
             AudioManager.instance.PlaySFX(8);
         }
 
-        yield return new WaitForSeconds(waitToRespawn);
+        yield return new WaitForSeconds(waitToRespawn - (1f / UIController.instance.fadeSpeed));
+        UIController.instance.FadeToBlack();
         Debug.Log("Wait finished");
+
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .2f);
+        UIController.instance.FadeFromBlack();
 
         SimplePlayerMovement.instance.gameObject.SetActive(true);
         SimplePlayerMovement.instance.transform.position = CheckpointController.instance.spawnPoint;
@@ -109,6 +113,10 @@ public class LevelManager : MonoBehaviour
         }
 
         yield return new WaitForSeconds(1.5f);
+
+        UIController.instance.FadeToBlack();
+
+        yield return new WaitForSeconds((1f / UIController.instance.fadeSpeed) + .25f);
 
         PlayerPrefs.SetInt(SceneManager.GetActiveScene().name + "_unlocked", 1);
         PlayerPrefs.SetString("CurrentLevel", SceneManager.GetActiveScene().name);

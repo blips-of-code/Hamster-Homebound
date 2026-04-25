@@ -27,9 +27,10 @@ public class UIController : MonoBehaviour
 
     void Start()
     {
+        levelCompleteText.SetActive(false);
         UpdateGemCount();
         UpdateKeyCount();
-        //FadeFromBlack();
+        FadeFromBlack();
     }
 
     void Update()
@@ -135,7 +136,7 @@ public class UIController : MonoBehaviour
         }
     }
 
-    /*public void FadeToBlack()
+    public void FadeToBlack()
     {
         shouldFadeToBlack = true;
         shouldFadeFromBlack = false;
@@ -145,5 +146,5 @@ public class UIController : MonoBehaviour
     {
         shouldFadeFromBlack = true;
         shouldFadeToBlack = false;
-    }*/
+    }
 }
