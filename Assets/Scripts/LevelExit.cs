@@ -22,16 +22,24 @@ public class LevelExit : MonoBehaviour
         }
         else
         {
-            if (MiltonMessagePopup.instance != null)
+            string message;
+
+            if (LevelManager.instance.keysNeededToProgress == 1)
             {
-                if (LevelManager.instance.KeysStillNeeded() <= 1)
-                {
-                    MiltonMessagePopup.instance.ShowTemporaryMessage("I need to get the key before I can progress.");
-                }
-                else
-                {
-                    MiltonMessagePopup.instance.ShowTemporaryMessage("I need to get the rest of the keys before I can progress.");
-                }
+                message = "I need to get the key before I can progress.";
+            }
+            else
+            {
+                message = "I need to get the key before I can progress. (Hint: Frogs)";
+            }
+
+            if (Level1TutorialManager.instance != null)
+            {
+                Level1TutorialManager.instance.ShowTemporaryMessage(message);
+            }
+            else if (MiltonMessagePopup.instance != null)
+            {
+                MiltonMessagePopup.instance.ShowTemporaryMessage(message);
             }
         }
     }

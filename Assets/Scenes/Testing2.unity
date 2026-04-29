@@ -264,6 +264,8 @@ MonoBehaviour:
   isKey: 0
   pickupID: 4
   pickupEffect: {fileID: 4573397727932236082, guid: b021d942e513b4b47a5c9e4b90fd3a66, type: 3}
+  usePickupDelay: 0
+  pickupDelay: 0
 --- !u!58 &223182673
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3436,6 +3438,8 @@ MonoBehaviour:
   keyPickupPrefab: {fileID: 8692111602935894328, guid: b54f709447117c94a83a66e6d0c937a1, type: 3}
   keySpawnPoint: {fileID: 994053392}
   keyPickupID: L2Key
+  droppedKeyGravityScale: 1
+  droppedKeyPickupDelay: 1
 --- !u!1 &735169472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3623,6 +3627,8 @@ MonoBehaviour:
   isKey: 0
   pickupID: 3
   pickupEffect: {fileID: 4573397727932236082, guid: b021d942e513b4b47a5c9e4b90fd3a66, type: 3}
+  usePickupDelay: 0
+  pickupDelay: 0
 --- !u!58 &794899027
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3758,7 +3764,7 @@ Transform:
   m_GameObject: {fileID: 994053391}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.2, y: 1.03, z: 0}
+  m_LocalPosition: {x: -0.2, y: 2.18, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4035,6 +4041,8 @@ MonoBehaviour:
   keyPickupPrefab: {fileID: 0}
   keySpawnPoint: {fileID: 0}
   keyPickupID: L2Key
+  droppedKeyGravityScale: 1
+  droppedKeyPickupDelay: 1
 --- !u!1 &1653765121
 GameObject:
   m_ObjectHideFlags: 0

@@ -97,6 +97,11 @@ public class LevelManager : MonoBehaviour
     {
         Debug.Log("EndLevelCo started");
 
+        if (AudioManager.instance != null)
+        {
+            AudioManager.instance.PlayLevelVictory();
+        }
+
         if (CameraController.instance != null)
         {
             CameraController.instance.stopFollow = true;

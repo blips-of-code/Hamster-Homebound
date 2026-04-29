@@ -25,6 +25,7 @@ public class Level1TutorialManager : MonoBehaviour
     [Header("Timing")]
     public float introDuration = 10f;
     public float specialTextSwapDelay = 0.5f;
+    public float temporaryMessageDuration = 2f;
 
     [Header("Ground Check")]
     public float groundCheckRadius = 0.2f;
@@ -37,6 +38,8 @@ public class Level1TutorialManager : MonoBehaviour
 
     private float introTimer;
     private bool waitingForTransition;
+
+    private Coroutine temporaryMessageRoutine;
 
     private enum TutorialStep
     {
@@ -199,7 +202,7 @@ public class Level1TutorialManager : MonoBehaviour
         if (currentStep == TutorialStep.Checkpoint && !waitingForTransition)
         {
             currentStep = TutorialStep.Star;
-            SetText("It’s very important that I collect 1 key per level and as many stars as I can.");
+            SetText("It's very important that I collect 1 key per level and as many stars as I can.");
             return true;
         }
 
@@ -216,6 +219,37 @@ public class Level1TutorialManager : MonoBehaviour
         }
 
         return false;
+    }
+
+    public void ShowTemporaryMessage(string message)
+    {
+        if (temporaryMessageRoutine != null)
+        {
+            StopCoroutine(temporaryMessageRoutine);
+        }
+
+        temporaryMessageRoutine = StartCoroutine(ShowTemporaryMessageCo(message));
+    }
+
+    private IEnumerator ShowTemporaryMessageCo(string message)
+    {
+        string previousText = "";
+
+        if (tutorialText != null)
+        {
+            previousText = tutorialText.text;
+        }
+
+        SetText(message);
+
+        yield return new WaitForSeconds(temporaryMessageDuration);
+
+        if (tutorialText != null && tutorialText.text == message)
+        {
+            SetText(previousText);
+        }
+
+        temporaryMessageRoutine = null;
     }
 
     private IEnumerator DelayedStepChange(TutorialStep nextStep, string nextMessage)
@@ -242,7 +276,7 @@ public class Level1TutorialManager : MonoBehaviour
 
     private void FollowSpeechBubble()
     {
-        if (mainCam == null || canvas == null || speechBubble == null)
+        if (mainCam == null || speechBubble == null)
             return;
 
         if (!speechBubble.gameObject.activeSelf)
@@ -253,26 +287,7 @@ public class Level1TutorialManager : MonoBehaviour
         if (target == null)
             return;
 
-        Vector3 screenPos = mainCam.WorldToScreenPoint(target.position + worldOffset);
-        Vector3 targetPos = screenPos + (Vector3)screenOffset;
-
-        if (canvas.renderMode == RenderMode.ScreenSpaceOverlay)
-        {
-            speechBubble.position = targetPos;
-        }
-        else if (canvas.renderMode == RenderMode.ScreenSpaceCamera)
-        {
-            RectTransform canvasRect = canvas.GetComponent<RectTransform>();
-            Vector2 localPoint;
-
-            RectTransformUtility.ScreenPointToLocalPointInRectangle(
-                canvasRect,
-                targetPos,
-                canvas.worldCamera,
-                out localPoint
-            );
-
-            speechBubble.anchoredPosition = localPoint;
-        }
+        Vector3 screenPos = RectTransformUtility.WorldToScreenPoint(mainCam, target.position + worldOffset);
+        speechBubble.position = screenPos + (Vector3)screenOffset;
     }
 }
