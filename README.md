@@ -1,4 +1,4 @@
-Goal: hamster homebound should be a simple 2D platformer game with a title, next level, game over, level select screen, 3 levels The Levels should be referred to as Episodes
+Goal: Hamster Homebound is a simple 2D platformer game with a title, next level, game over, level select screen, 3 levels The Levels are referred to as Episodes
 
 Episode 1: Breaking Bad - essentially a tutorial level that guides player through basic controls with a little speech block thing that provides exposition (text block object is shown in videos 79-80) and introduces them to the objects, obstacles, checkpoints and story (Scene > Testing2 in Unity)
 
@@ -16,18 +16,9 @@ Obstacles: moving platform, spikes (can take straight from tutorial but pick a b
 
 Objects: boxes that can be climbed on to reach higher areas 
 
-Things to note:
-GitHub repo: https://github.com/blips-of-code/Hamster-Homebound
 Game controls: left and right arrow keys to move left and right, spacebar to jump, double spacebar to double jump
-Player, in our case, refers to MiltonPawsUpPixel
-When following the animation tutorials: When they refer to the PlayerController script, don’t change PlayerController.cs, change SimplePlayerMovement instead
-I put all the sprites for our game under the Art folder in Assets. The tutorial art is in different folders
-You go into a specific level/scene by clicking the scenes folder. Main menu is the starting screen
-When following the videos assigned to you, please add notes under the appropriate number below.
-Before creating a new folder, make sure that a folder with that exact name doesn’t already exist
-To make pixel art:
-https://www.piskelapp.com/p/create/sprite/
-If you find a pixellated image with a non-transparent bg that you’d like to add to the game, use this tool to remove the bg:
-https://www.adobe.com/express/feature/image/remove-background
-I update the repo using git bash; here are some commonly used commands for reference: https://dev.to/axlblaze/git-bash-commonly-used-commands-22f7
 
+Play here: https://play.unity.com/en/games/fd48e121-d87b-4d57-926d-057db749b4f1/hamster-homebound
+
+Things to note:
+I update the repo using git bash; here are some commonly used commands for reference: https://dev.to/axlblaze/git-bash-commonly-used-commands-22f7
