@@ -7,18 +7,18 @@ public class MainMenu : MonoBehaviour
 {
     public string startScene, continueScene;
 
-    public GameObject continueButton;
+    //public GameObject continueButton;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.HasKey(startScene + "_unlocked"))
+        /*if (PlayerPrefs.HasKey(startScene + "_unlocked"))
         {
             continueButton.SetActive(true);
         } else
         {
             continueButton.SetActive(false);
-        }
+        }*/
 
         
     }

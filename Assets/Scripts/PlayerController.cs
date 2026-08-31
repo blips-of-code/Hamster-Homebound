@@ -97,7 +97,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        anim.SetFloat("moveSpeed", Mathf.Abs( theRB.linearVelocity.x));
+        anim.SetFloat("moveSpeed", Mathf.Abs(theRB.linearVelocity.x));
         anim.SetBool("isGrounded", isGrounded);
     }
 

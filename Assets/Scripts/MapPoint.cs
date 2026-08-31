@@ -6,6 +6,7 @@ public class MapPoint : MonoBehaviour
 {
     public MapPoint up, right, down, left;
     public bool isLevel, isLocked;
+    /*add levelToCheck, levelName;*/
     public string levelToLoad, levelToCheck, levelName;
 
     public int gemsCollected, totalGems;
@@ -18,7 +19,7 @@ public class MapPoint : MonoBehaviour
     {
         if(isLevel && levelToLoad != null)
         {
-            if(PlayerPrefs.HasKey(levelToLoad + "_gems"))
+            /*if(PlayerPrefs.HasKey(levelToLoad + "_gems"))
             {
                 gemsCollected = PlayerPrefs.GetInt(levelToLoad + "_gems");
             }
@@ -36,11 +37,11 @@ public class MapPoint : MonoBehaviour
             if(bestTime <= targetTime && bestTime != 0)
             {
                 timeBadge.SetActive(true);
-            }
+            }*/
 
             isLocked = true;
 
-            if(levelToCheck != null)
+           if (levelToCheck != null)
             {
                 if(PlayerPrefs.HasKey(levelToCheck + "_unlocked"))
                 {

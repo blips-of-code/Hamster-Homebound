@@ -34,6 +34,9 @@ public class EnemyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (theSR == null)
+            return;
+
         if (moveCount > 0)
         {
             moveCount -= Time.deltaTime;

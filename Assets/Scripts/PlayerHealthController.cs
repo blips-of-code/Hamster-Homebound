@@ -13,7 +13,10 @@ public class PlayerHealthController : MonoBehaviour
 
     private SpriteRenderer theSR;
 
-    //public GameObject deathEffect;
+    public GameObject deathEffect;
+
+    public float frogProtectionLength = 0.2f;
+    private float frogProtectionCounter;
 
     private void Awake()
     {
@@ -31,19 +34,29 @@ public class PlayerHealthController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(invincibleCounter > 0)
+        if (invincibleCounter > 0)
         {
             invincibleCounter -= Time.deltaTime;
 
-            if(invincibleCounter <= 0)
+            if (invincibleCounter <= 0)
             {
                 theSR.color = new Color(theSR.color.r, theSR.color.g, theSR.color.b, 1f);
             }
+        }
+
+        if (frogProtectionCounter > 0)
+        {
+            frogProtectionCounter -= Time.deltaTime;
         }
     }
 
     public void DealDamage()
     {
+        if (frogProtectionCounter > 0)
+        {
+            return;
+        }
+
         if (invincibleCounter <= 0)
         {
             //currentHealth -= 1;
@@ -53,11 +66,11 @@ public class PlayerHealthController : MonoBehaviour
             {
                 currentHealth = 0;
 
-                gameObject.SetActive(false);
+                //gameObject.SetActive(false);
 
-                /*Instantiate(deathEffect, transform.position, transform.rotation);
+                Instantiate(deathEffect, transform.position, transform.rotation);
 
-                LevelManager.instance.RespawnPlayer();*/
+                LevelManager.instance.RespawnPlayer();
             }
             else
             {
@@ -66,19 +79,29 @@ public class PlayerHealthController : MonoBehaviour
 
                 SimplePlayerMovement.instance.KnockBack();
 
-                //AudioManager.instance.PlaySFX(9);
+                AudioManager.instance.PlaySFX(9);
             }
 
             UIController.instance.UpdateHealthDisplay();
         }
     }
 
-    /*public void HealPlayer()
+    public void EnableFrogProtection()
+    {
+        frogProtectionCounter = frogProtectionLength;
+    }
+
+    public bool CanTakeFrogDamage()
+    {
+        return frogProtectionCounter <= 0f;
+    }
+
+    public void HealPlayer()
     {
         //currentHealth = maxHealth;
 
         currentHealth++;
-        if(currentHealth > maxHealth)
+        if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
         }
@@ -86,7 +109,7 @@ public class PlayerHealthController : MonoBehaviour
         UIController.instance.UpdateHealthDisplay();
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    /*private void OnCollisionEnter2D(Collision2D other)
     {
         if(other.gameObject.tag == "Platform")
         {

@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: 004a0571d01c0b74e9bf8b4bcd4820e9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4090704128940416892
+    second: Family Caged (breakout 2, real one) - spritesheet_0
+  - first:
+      213: -7025210106660401959
+    second: Family Caged (breakout 2, real one) - spritesheet_1
+  - first:
+      213: 8482507999796162886
+    second: Family Caged (breakout 2, real one) - spritesheet_2
+  - first:
+      213: -6312098807885415863
+    second: Family Caged (breakout 2, real one) - spritesheet_3
+  - first:
+      213: -3848604154860979657
+    second: Family Caged (breakout 2, real one) - spritesheet_4
+  - first:
+      213: -3180121392615510464
+    second: Family Caged (breakout 2, real one) - spritesheet_5
+  - first:
+      213: 8829790043122052575
+    second: Family Caged (breakout 2, real one) - spritesheet_6
+  - first:
+      213: 705293650463091434
+    second: Family Caged (breakout 2, real one) - spritesheet_7
+  - first:
+      213: -767040471516388066
+    second: Family Caged (breakout 2, real one) - spritesheet_8
+  - first:
+      213: 1076585269817642382
+    second: Family Caged (breakout 2, real one) - spritesheet_9
+  - first:
+      213: -6910366911708480046
+    second: Family Caged (breakout 2, real one) - spritesheet_10
+  - first:
+      213: 3855142881476062965
+    second: Family Caged (breakout 2, real one) - spritesheet_11
+  - first:
+      213: 7038373950197301046
+    second: Family Caged (breakout 2, real one) - spritesheet_12
+  - first:
+      213: -6411891066941503761
+    second: Family Caged (breakout 2, real one) - spritesheet_13
+  - first:
+      213: -4784512198900548460
+    second: Family Caged (breakout 2, real one) - spritesheet_14
+  - first:
+      213: 1859779265368085796
+    second: Family Caged (breakout 2, real one) - spritesheet_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f97b65bb915c830800000000000000
+      internalID: 4090704128940416892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_1
+      rect:
+        serializedVersion: 2
+        x: 307
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9dcc50011a0718e90800000000000000
+      internalID: -7025210106660401959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_2
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6417244651ce7b570800000000000000
+      internalID: 8482507999796162886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_3
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ab2d0c39be668a0800000000000000
+      internalID: -6312098807885415863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_4
+      rect:
+        serializedVersion: 2
+        x: 1207
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73a3b6479e2079ac0800000000000000
+      internalID: -3848604154860979657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_5
+      rect:
+        serializedVersion: 2
+        x: 1507
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04e28824170fdd3d0800000000000000
+      internalID: -3180121392615510464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_6
+      rect:
+        serializedVersion: 2
+        x: 1807
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdd22911347b98a70800000000000000
+      internalID: 8829790043122052575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_7
+      rect:
+        serializedVersion: 2
+        x: 2107
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aeae03a96d4b9c900800000000000000
+      internalID: 705293650463091434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_8
+      rect:
+        serializedVersion: 2
+        x: 2407
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15eaee41ccea55f0800000000000000
+      internalID: -767040471516388066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_9
+      rect:
+        serializedVersion: 2
+        x: 2707
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d06e1599cc0fe00800000000000000
+      internalID: 1076585269817642382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_10
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ddb00018e17910a0800000000000000
+      internalID: -6910366911708480046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_11
+      rect:
+        serializedVersion: 2
+        x: 3307
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fea1c87608308530800000000000000
+      internalID: 3855142881476062965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_12
+      rect:
+        serializedVersion: 2
+        x: 3607
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63f7fd911d35da160800000000000000
+      internalID: 7038373950197301046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_13
+      rect:
+        serializedVersion: 2
+        x: 3907
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe68378db036407a0800000000000000
+      internalID: -6411891066941503761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_14
+      rect:
+        serializedVersion: 2
+        x: 4207
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49c7209218ff99db0800000000000000
+      internalID: -4784512198900548460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Family Caged (breakout 2, real one) - spritesheet_15
+      rect:
+        serializedVersion: 2
+        x: 4507
+        y: 0
+        width: 282
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 425d6e863634fc910800000000000000
+      internalID: 1859779265368085796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Family Caged (breakout 2, real one) - spritesheet_0: 4090704128940416892
+      Family Caged (breakout 2, real one) - spritesheet_1: -7025210106660401959
+      Family Caged (breakout 2, real one) - spritesheet_10: -6910366911708480046
+      Family Caged (breakout 2, real one) - spritesheet_11: 3855142881476062965
+      Family Caged (breakout 2, real one) - spritesheet_12: 7038373950197301046
+      Family Caged (breakout 2, real one) - spritesheet_13: -6411891066941503761
+      Family Caged (breakout 2, real one) - spritesheet_14: -4784512198900548460
+      Family Caged (breakout 2, real one) - spritesheet_15: 1859779265368085796
+      Family Caged (breakout 2, real one) - spritesheet_2: 8482507999796162886
+      Family Caged (breakout 2, real one) - spritesheet_3: -6312098807885415863
+      Family Caged (breakout 2, real one) - spritesheet_4: -3848604154860979657
+      Family Caged (breakout 2, real one) - spritesheet_5: -3180121392615510464
+      Family Caged (breakout 2, real one) - spritesheet_6: 8829790043122052575
+      Family Caged (breakout 2, real one) - spritesheet_7: 705293650463091434
+      Family Caged (breakout 2, real one) - spritesheet_8: -767040471516388066
+      Family Caged (breakout 2, real one) - spritesheet_9: 1076585269817642382
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
